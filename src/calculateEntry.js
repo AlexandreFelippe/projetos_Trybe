@@ -14,6 +14,7 @@ const calculateEntry = (entrants) => {
     return 0;
   }
   const { child, adult, senior } = countEntrants(entrants);
+
   const { adult: adultPrice, senior: seniorPrice, child: childPrice } = prices;
   const sum = (adult * adultPrice + senior * seniorPrice + child * childPrice);
   return sum;
